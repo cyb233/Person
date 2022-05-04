@@ -1,6 +1,8 @@
 package moe.shuvi.person.model;
 
 import moe.shuvi.person.constants.Sex;
+import moe.shuvi.person.model.organ.Heart;
+import moe.shuvi.person.model.system.CirculatorySystem;
 
 import java.util.Date;
 
@@ -21,20 +23,20 @@ public class Person {
      */
     private Date birthday;
     /**
-     * 循环系统
+     * 心脏
      */
-    private CirculatorySystem circulatorySystem;
+    private CirculatorySystem heart;
 
     public Person() {
         setSex(Math.random() < 0.5 ? Sex.XX : Sex.XY);
         setBirthday(new Date());
-        setCirculatorySystem(new CirculatorySystem());
+        setHeart(new Heart());
     }
 
-    public Person(Sex sex, Date birthday, CirculatorySystem circulatorySystem) {
+    public Person(Sex sex, Date birthday, CirculatorySystem heart) {
         this.sex = sex;
         this.birthday = birthday;
-        this.circulatorySystem = circulatorySystem;
+        this.heart = heart;
     }
 
     public Sex getSex() {
@@ -53,12 +55,11 @@ public class Person {
         this.birthday = birthday;
     }
 
-    public CirculatorySystem getCirculatorySystem() {
-        return circulatorySystem;
+    public CirculatorySystem getHeart() {
+        return heart;
     }
 
-    public Person setCirculatorySystem(CirculatorySystem circulatorySystem) {
-        this.circulatorySystem = circulatorySystem;
-        return this;
+    public void setHeart(CirculatorySystem heart) {
+        this.heart = heart;
     }
 }

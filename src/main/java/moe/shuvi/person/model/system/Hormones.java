@@ -1,4 +1,4 @@
-package moe.shuvi.person.model;
+package moe.shuvi.person.model.system;
 
 /**
  * 激素
