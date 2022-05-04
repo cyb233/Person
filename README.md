@@ -4,6 +4,10 @@
 
 你可以从Person.java开始阅读
 
+## 欢迎医学工作者前来讨论
+- [issue](https://github.com/cyb233/Person/issues)
+- [discussions](https://github.com/cyb233/Person/discussions)
+
 ## 欢迎PR,要求如下
 
 1. 所有的类,属性,方法等必须有详细注释
